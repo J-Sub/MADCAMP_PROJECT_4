@@ -1,0 +1,58 @@
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4
+$ git init
+Initialized empty Git repository in C:/Users/q/project4/MAD_CAMP_PROJECT_4/.git/
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$ git add .
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$ git commit -m "first commit"
+
+
+git push
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$ git remote add origin https://github.com/jung-seob/MADCAMP_PROJECT_4.git
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$ git push --set-upstream origin master
+Username for 'https://github.com': 아뒹
+Enumerating objects: 59, done.
+Counting objects: 100% (59/59), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (59/59), 39.97 MiB | 1.94 MiB/s, done.
+Total 59 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/jung-seob/MADCAMP_PROJECT_4.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+q@q-PC MINGW64 ~/project4/MAD_CAMP_PROJECT_4 (master)
+$
+
+여기까지 gitbash
+
+실행할때는 VSC에서 npm cache clean --force , package.lock 파일 delete, npm install 하면 됨 그리고 npm start
